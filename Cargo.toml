@@ -10,3 +10,20 @@ members = [
 
 [profile.dev]
 split-debuginfo = "unpacked"
+
+# (not merged yet) "Add OpenBSD amd64 bindings" https://github.com/ExPixel/miniaudio-rs/pull/75
+[patch."git+https://github.com/jpochyla/miniaudio-rs"]
+miniaudio = { git = "https://github.com/klemensn/miniaudio-rs", branch = "openbsd" }
+
+# (merged already) "Build on OpenBSD" https://github.com/linebender/piet/pull/466
+[patch.crates-io]
+piet = { git = "https://github.com/linebender/piet", commit = "8f7bc70a097d585205573442b970ec087d4e8f3b" }
+piet-cairo = { git = "https://github.com/linebender/piet", commit = "8f7bc70a097d585205573442b970ec087d4e8f3b" }
+piet-common = { git = "https://github.com/linebender/piet", commit = "8f7bc70a097d585205573442b970ec087d4e8f3b" }
+
+# (merged already) "Build on OpenBSD" https://github.com/linebender/druid/pull/1993
+# (not merged yet) "Fix missing import in gtk/window.rs" https://github.com/jpochyla/druid/commit/a9522f58cf2e79662287cc27ab8a6f200fe88400
+[patch."git+https://github.com/jpochyla/druid"]
+druid = { git = "https://github.com/klemensn/druid", branch = "psst-openbsd" }
+druid-derive = { git = "https://github.com/klemensn/druid", branch = "psst-openbsd" }
+druid-shell = { git = "https://github.com/klemensn/druid", branch = "psst-openbsd" }

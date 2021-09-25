@@ -488,7 +488,7 @@ checksum = "bd0c93bb4b0c6d9b77f4435b0ae98c24d17f1c45b2ff844c6151a07256ca923b"
 [[package]]
 name = "druid"
 version = "0.7.0"
-source = "git+https://github.com/jpochyla/druid?branch=psst#a5d128ec254f1d27ac70e623b5da2c6733f11124"
+source = "git+https://github.com/klemensn/druid?branch=psst-openbsd#d815bc1e944742c9b1be2a61f1311df505121fce"
 dependencies = [
  "console_error_panic_hook",
  "druid-derive",
@@ -510,7 +510,7 @@ dependencies = [
 [[package]]
 name = "druid-derive"
 version = "0.4.0"
-source = "git+https://github.com/jpochyla/druid?branch=psst#a5d128ec254f1d27ac70e623b5da2c6733f11124"
+source = "git+https://github.com/klemensn/druid?branch=psst-openbsd#d815bc1e944742c9b1be2a61f1311df505121fce"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -520,7 +520,7 @@ dependencies = [
 [[package]]
 name = "druid-shell"
 version = "0.7.0"
-source = "git+https://github.com/jpochyla/druid?branch=psst#a5d128ec254f1d27ac70e623b5da2c6733f11124"
+source = "git+https://github.com/klemensn/druid?branch=psst-openbsd#d815bc1e944742c9b1be2a61f1311df505121fce"
 dependencies = [
  "anyhow",
  "bitflags",
@@ -599,7 +599,7 @@ dependencies = [
 [[package]]
 name = "ep-miniaudio-sys"
 version = "2.4.0"
-source = "git+https://github.com/jpochyla/miniaudio-rs#bad980450a072d582af2d88e5dcfd676f23e091f"
+source = "git+https://github.com/klemensn/miniaudio-rs?branch=openbsd#4d429a322513803992cfd03d7b3a487a3465a504"
 dependencies = [
  "bitflags",
  "cc",
@@ -1194,7 +1194,7 @@ dependencies = [
 [[package]]
 name = "miniaudio"
 version = "0.10.0"
-source = "git+https://github.com/jpochyla/miniaudio-rs#bad980450a072d582af2d88e5dcfd676f23e091f"
+source = "git+https://github.com/klemensn/miniaudio-rs?branch=openbsd#4d429a322513803992cfd03d7b3a487a3465a504"
 dependencies = [
  "bitflags",
  "ep-miniaudio-sys",
@@ -1406,8 +1406,7 @@ dependencies = [
 [[package]]
 name = "piet"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e2a9423cf762dd366a7cc1fafe9eacc66e2cca12564f231e5740022fe3e9bd0"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "image",
  "kurbo",
@@ -1417,8 +1416,7 @@ dependencies = [
 [[package]]
 name = "piet-cairo"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "67c27f6ffb9c0406643b863df837b8525c0b95303664cc56916f7271a0641586"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "cairo-rs",
  "glib",
@@ -1433,8 +1431,7 @@ dependencies = [
 [[package]]
 name = "piet-common"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da3691d842e911f82f491ca8179031afba11dacf482674edc05eb84a3e117eac"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "cairo-rs",
  "cairo-sys-rs",
@@ -1452,8 +1449,7 @@ dependencies = [
 [[package]]
 name = "piet-coregraphics"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "16d6529ba5b7c89fb4e8fd53783dfa679031f398d1a463cf2533fa6543be7e14"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "core-foundation",
  "core-foundation-sys",
@@ -1466,8 +1462,7 @@ dependencies = [
 [[package]]
 name = "piet-direct2d"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bb06801806103d6d0bafaf89ac285129da1b5783530f4e83162ac079b199dd07"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "associative-cache",
  "dwrote",
@@ -1480,8 +1475,7 @@ dependencies = [
 [[package]]
 name = "piet-web"
 version = "0.5.0-pre1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "57790afb197978c66f454a3eac6d5bf36d41bb28ae85fbb9132ef8b042e6d6e7"
+source = "git+https://github.com/linebender/piet#8f7bc70a097d585205573442b970ec087d4e8f3b"
 dependencies = [
  "js-sys",
  "piet",
