@@ -1,6 +1,6 @@
 # Psst
 
-Fast Spotify client with native GUI, without Electron, built in Rust. Very early in development, lacking in features, stability, and general user experience. It is being tested only on Mac so far, but aims for full Windows and Linux support. Contributions welcome!
+Fast Spotify client with native GUI, without Electron, built in Rust. Very early in development, lacking in features, stability, and general user experience. It is being tested only on Mac so far, but aims for full Windows, Linux and BSD support. Contributions welcome!
 
 [![Build](https://github.com/jpochyla/psst/actions/workflows/build.yml/badge.svg)](https://github.com/jpochyla/psst/actions)
 
@@ -24,6 +24,15 @@ RHEL/Fedora:
 
 ```shell
 sudo dnf install openssl-devel gtk3-devel cairo-devel
+```
+
+##### BSD
+
+Similar to Linux, Druid defaults to GTK while providing an X11 backend as well. So far, only OpenBSD/amd64 has been tested, but others should work as well (they first require support in crates like miniaudio-rs).
+
+OpenBSD:
+```shell
+doas pkg_add gtk+3 cairo
 ```
 
 ##### Building
