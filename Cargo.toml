@@ -16,6 +16,4 @@ opt-level = 2
 
 [patch.crates-io]
 # (not merged yet) solve panic at startup: "Add support for OpenBSD platform via sndio host" https://github.com/RustAudio/cpal/pull/493
-#cpal = { git = "https://github.com/conwayste/cpal", branch = "aaron/openbsd_sndio_host" }
-# clean rebase latest cpal master as of 17.11.2021
-cpal = { git = "https://github.com/klemensn/cpal", branch = "aaron/openbsd_sndio_host" }
+cpal = { git = "https://github.com/conwayste/cpal", branch = "aaron/openbsd_sndio_host" }
