@@ -2,3 +2,24 @@
 # point bindgen at LLVM on OpenBSD
 # required to build at least clang-sys, sndio-sys and cpal
 LIBCLANG_PATH = { value = "/usr/local/lib" }
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."https://github.com/conwayste/cpal"]
+git = "https://github.com/conwayste/cpal"
+branch = "aaron/openbsd_sndio_host"
+replace-with = "vendored-sources"
+
+[source."https://github.com/jpochyla/druid"]
+git = "https://github.com/jpochyla/druid"
+branch = "psst"
+replace-with = "vendored-sources"
+
+[source."https://github.com/jpochyla/piet"]
+git = "https://github.com/jpochyla/piet"
+branch = "ctfont-cache"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "./vendordir/"
